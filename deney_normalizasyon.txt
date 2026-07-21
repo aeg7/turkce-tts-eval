@@ -1,0 +1,32 @@
+dosya          kat           CER A  CER K  CER N    ayr A  ayr K  ayr N   not
+--------------------------------------------------------------------------------------------------------------
+cikti_00.wav   normal          0.0    0.0    0.0        -      -      -   
+cikti_01.wav   normal          0.0    3.6    0.0        -      -      -   
+cikti_02.wav   uzun            0.0    0.0    0.0        -      -      -   
+cikti_03.wav   uzun            0.0    0.0    0.0        -      -      -   
+cikti_04.wav   soru            0.0    0.0    0.0        -      -      -   
+cikti_05.wav   soru            0.0    0.0    0.0        -      -      -   
+cikti_06.wav   sayi            0.0    0.0   10.3       +3     +3     +3   norm KOTULESTI (0->10, gurultu 0)
+cikti_07.wav   sayi            0.0    0.0    0.0       +4     +8    +29   
+cikti_08.wav   tarih           0.0    0.0   32.1      +29    +34    +31   norm KOTULESTI (0->32, gurultu 0)
+cikti_09.wav   tarih          24.1   31.0   22.4      +14     +5    +14   model oynak (A/K farki 7)
+cikti_10.wav   para           11.1   22.2   14.4      +18     +7    +53   model oynak (A/K farki 11)
+cikti_11.wav   para            0.0    0.0   36.7      +15    +15     +2   norm KOTULESTI (0->37, gurultu 0)
+cikti_12.wav   kisaltma        4.4   13.2    5.9        -      -      -   model oynak (A/K farki 9)
+cikti_13.wav   kisaltma        0.0    8.0    8.0        -      -      -   model oynak (A/K farki 8)
+cikti_14.wav   ozel_isim       0.0    0.0    0.0        -      -      -   
+cikti_15.wav   ozel_isim       0.0    0.0    0.0        -      -      -   
+cikti_16.wav   ing_karisik     0.0    3.4    0.0        -      -      -   
+cikti_17.wav   ing_karisik     0.0    0.0    0.0        -      -      -   
+cikti_18.wav   cagri_merkezi    0.0    0.0    0.0        -      -      -   
+cikti_19.wav   cagri_merkezi    0.0    0.0    0.0        -      -      -   
+cikti_20.wav   homograf        2.2    0.0    0.0        -      -      -   
+cikti_21.wav   homograf        0.0    0.0    0.0        -      -      -   
+--------------------------------------------------------------------------------------------------------------
+kor nokta:   A=4  K=2  N=4
+ort CER:     A=1.9  K=3.7  N=5.9
+
+YORUM:
+  A vs K (ayni ayar) = modelin gurultusu. Kor nokta 4 vs 2.
+  A vs N (norm acik) = normalizasyonun etkisi.
+  Bir satirdaki N degisimi, o satirin A/K oynamasindan buyukse GERCEK.

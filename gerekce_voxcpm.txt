@@ -1,0 +1,222 @@
+==============================================================================
+cikti_00.wav  [normal]  bayrak: -
+  KOD : TEMIZ
+  CER : 0.0   MOS: 2.59
+  REF : selam dostum benim bilgisayarım var
+  WHIS: selam dostum benim bilgisayarım var
+  DIFF: selam dostum benim bilgisayarım var
+  NEDEN:
+    - İki ASR de temiz, ayrışma yok. Okuma doğru.
+==============================================================================
+cikti_01.wav  [normal]  bayrak: -
+  KOD : TEMIZ
+  CER : 0.0   MOS: 2.40
+  REF : işleminiz başarıyla tamamlandı
+  WHIS: işleminiz başarıyla tamamlandı
+  DIFF: işleminiz başarıyla tamamlandı
+  NEDEN:
+    - İki ASR de temiz, ayrışma yok. Okuma doğru.
+==============================================================================
+cikti_02.wav  [uzun]  bayrak: -
+  KOD : NORM_KAZANC
+  CER : 0.0   MOS: 2.72
+  REF : bugün hava biraz güneşliydi ben de buna güvenerek şemsiyesiz çıktım fakat sonra bir anda hava karard
+  WHIS: bugün hava biraz güneşliydi ben de buna güvenerek şemsiyesiz çıktım fakat sonra bir anda hava karard
+  DIFF: bugün hava biraz güneşliydi ben de buna güvenerek şemsiyesiz çıktım fakat sonra bir anda hava karardı ve yağmur yağmaya başladı
+  NEDEN:
+    - Normalizasyon öncesi CER yüzde 3.6, sonrası yüzde 0.0. Katman 3.6 puan sahte hatayı temizledi.
+==============================================================================
+cikti_03.wav  [uzun]  bayrak: -
+  KOD : TEMIZ
+  CER : 0.0   MOS: 2.67
+  REF : kredi kartı ekstrenizin son ödeme tarihi yaklaştığı için asgari tutarın altında ödeme yapmanız durum
+  WHIS: kredi kartı ekstrenizin son ödeme tarihi yaklaştığı için asgari tutarın altında ödeme yapmanız durum
+  DIFF: kredi kartı ekstrenizin son ödeme tarihi yaklaştığı için asgari tutarın altında ödeme yapmanız durumunda gecikme faizi işleyeceğini hatırlatmak isteriz
+  NEDEN:
+    - İki ASR de temiz, ayrışma yok. Okuma doğru.
+==============================================================================
+cikti_04.wav  [soru]  bayrak: -
+  KOD : TEMIZ
+  CER : 0.0   MOS: 3.07
+  REF : bugün ofise gelecek misin
+  WHIS: bugün ofise gelecek misin
+  DIFF: bugün ofise gelecek misin
+  NEDEN:
+    - İki ASR de temiz, ayrışma yok. Okuma doğru.
+==============================================================================
+cikti_05.wav  [soru]  bayrak: -
+  KOD : TEMIZ
+  CER : 0.0   MOS: 2.54
+  REF : başka bir işlem yapmak ister misiniz
+  WHIS: başka bir işlem yapmak ister misiniz
+  DIFF: başka bir işlem yapmak ister misiniz
+  NEDEN:
+    - İki ASR de temiz, ayrışma yok. Okuma doğru.
+==============================================================================
+cikti_06.wav  [sayi]  bayrak: sadik_asr
+  KOD : W2V2_GURULTU + NORM_KAZANC
+  CER : 0.0   MOS: 2.65
+  REF : bugün ofiste iki stajyer vardı ve her biri iki bilgisayar getirmişti
+  WHIS: bugün ofiste iki stajyer vardı ve her biri iki bilgisayar getirmişti
+  W2V2: bugün ofiste iki stacyer vardı ve her biri iki bilgi seyar getirmişti
+  DIFF: bugün ofiste iki stajyer vardı ve her biri iki bilgisayar getirmişti
+  NEDEN:
+    - Sadık ASR +3 puan ayrışıyor ama eşik 10. Bu wav2vec2'nin kendi gürültüsü, gerçek hata değil. Alarm verilmedi.
+    - Normalizasyon öncesi CER yüzde 10.9, sonrası yüzde 0.0. Katman 10.9 puan sahte hatayı temizledi.
+==============================================================================
+cikti_07.wav  [sayi]  bayrak: kritik,sadik_asr
+  KOD : W2V2_GURULTU + NORM_KAZANC + KRITIK
+  CER : 0.0   MOS: 2.79
+  REF : hesabınıza son bir yılda bin iki yüz kırk beş kez giriş yapıldı
+  WHIS: hesabınıza son bir yılda bin iki yüz kırk beş kez giriş yapıldı
+  W2V2: hesabınıza son bir yılda bin um iki yüz kırk beş kez giriş yapıldı
+  DIFF: hesabınıza son bir yılda bin iki yüz kırk beş kez giriş yapıldı
+  NEDEN:
+    - Sadık ASR +4 puan ayrışıyor ama eşik 10. Bu wav2vec2'nin kendi gürültüsü, gerçek hata değil. Alarm verilmedi.
+    - Normalizasyon öncesi CER yüzde 2.4, sonrası yüzde 0.0. Katman 2.4 puan sahte hatayı temizledi.
+==============================================================================
+cikti_08.wav  [tarih]  bayrak: kritik,insan,sadik_asr
+  KOD : MASKELEME + INSAN + NORM_KAZANC + KRITIK
+  CER : 0.0   MOS: 2.56
+  REF : iş bankası nda staja yirmi dokuz haziran iki bin yirmi altı da başladım maalesef yirmi yedi temmuz i
+  WHIS: iş bankası nda staja yirmi dokuz haziran iki bin yirmi altı da başladım maalesef yirmi yedi temmuz i
+  W2V2: hiş bankası nda staca yirmi dokuzun koksıfır altı binki bin yirmi altıda başladım maalesef yirmi yed
+  DIFF: iş bankası nda staja yirmi dokuz haziran iki bin yirmi altı da başladım maalesef yirmi yedi temmuz iki bin yirmi altı da bitecek
+  NEDEN:
+    - Whisper CER yüzde 0.0 gösteriyor ama bu sahte. Sadık ASR (wav2vec2) yüzde 29.2 hata görüyor, ayrışma +29 puan (eşik 10). Whisper duyduğunu düzeltip yazıya döküyor, gerçek okuma hatasını gizliyor.
+    - İnsan bayrağı var. Otomatik metrik burada tek başına karar veremez, kulakla dinlenmeli.
+    - Normalizasyon öncesi CER yüzde 2.9, sonrası yüzde 0.0. Katman 2.9 puan sahte hatayı temizledi.
+==============================================================================
+cikti_09.wav  [tarih]  bayrak: kritik,insan,sadik_asr
+  KOD : CIFT_TETIK + INSAN + KRITIK
+  CER : 24.1   MOS: 2.45
+  REF : şubelerimiz hafta içi dokuz ile on yedi arasında hizmet vermektedir
+  WHIS: öbüşübelerimiz hafta içi dokuz sıfır ile on yedi sıfır arasında hizmet vermektedir
+  W2V2: eböşübelerimiz hafta içi sıfır dokuzı fırıfır ile on yedisıfır arasında hizmet vermektedir
+  DIFF: {+öbü+}ş[-u-]{+ü+}belerimiz hafta içi dokuz {+sıfır +}ile on yedi{+ sıfır+} arasında hizmet vermektedir
+  NEDEN:
+    - İki mekanizma birden. Whisper zaten yüzde 24.1 hata görüyor (gerçek okuma hatası var), üstüne sadık ASR yüzde 37.9 ile +14 puan ayrışıyor (maskeleme de var). En kötü durum.
+    - İnsan bayrağı var. Otomatik metrik burada tek başına karar veremez, kulakla dinlenmeli.
+==============================================================================
+cikti_10.wav  [para]  bayrak: kritik,insan,sadik_asr
+  KOD : CIFT_TETIK + INSAN + NORM_KAZANC + KRITIK
+  CER : 11.1   MOS: 2.84
+  REF : bu ay maaşım otuz iki bin beş yüz lira yattı ama bin yedi yüz elli lira elli kuruş lik faturayı ödey
+  WHIS: bu ay maaşım otuz iki bin beş yüz lira yattı ama bin yedi yüz elli ripomuz elli lira lik faturayı öd
+  W2V2: bu ay maaşımı otuz iki bin beş yüz sıfırthele yattığı ama bir minyedi yüz elli bip omuz elli tehleli
+  DIFF: bu ay maaşım otuz iki bin beş yüz lira yattı ama bin yedi yüz elli [-l-]{+r+}i[-ra-]{+pomuz+} elli [-ku-]{+li+}r[-uş-]{+a+} lik faturayı ödeyince azaldı
+  NEDEN:
+    - İki mekanizma birden. Whisper zaten yüzde 11.1 hata görüyor (gerçek okuma hatası var), üstüne sadık ASR yüzde 28.9 ile +18 puan ayrışıyor (maskeleme de var). En kötü durum.
+    - İnsan bayrağı var. Otomatik metrik burada tek başına karar veremez, kulakla dinlenmeli.
+    - Normalizasyon öncesi CER yüzde 16.7, sonrası yüzde 11.1. Katman 5.6 puan sahte hatayı temizledi.
+==============================================================================
+cikti_11.wav  [para]  bayrak: kritik,insan,sadik_asr
+  KOD : MASKELEME + INSAN + KRITIK
+  CER : 0.0   MOS: 2.88
+  REF : kartınızdan kırk dokuz lira doksan kuruş tutarında alışveriş yapıldı
+  WHIS: kartınızdan kırk dokuz lira doksan kuruş tutarında alışveriş yapıldı
+  W2V2: kartınızdan kırk dokuz virgül doksan tehle tutarında alışveriş yapıldı
+  DIFF: kartınızdan kırk dokuz lira doksan kuruş tutarında alışveriş yapıldı
+  NEDEN:
+    - Whisper CER yüzde 0.0 gösteriyor ama bu sahte. Sadık ASR (wav2vec2) yüzde 15.0 hata görüyor, ayrışma +15 puan (eşik 10). Whisper duyduğunu düzeltip yazıya döküyor, gerçek okuma hatasını gizliyor.
+    - İnsan bayrağı var. Otomatik metrik burada tek başına karar veremez, kulakla dinlenmeli.
+==============================================================================
+cikti_12.wav  [kisaltma]  bayrak: kritik
+  KOD : KRITIK
+  CER : 4.4   MOS: 2.96
+  REF : te te se konusunda bizim dilimizde ve e er ölçerken hata oranı yüksek çıkabiliyor
+  WHIS: te te se konusunda bizim dilimizde v r ölçerken hata oranı yüksek çıkabiliyor
+  DIFF: te te se konusunda bizim dilimizde v[-e-] [-e e-]r ölçerken hata oranı yüksek çıkabiliyor
+  NEDEN:
+==============================================================================
+cikti_13.wav  [kisaltma]  bayrak: kritik
+  KOD : KRITIK
+  CER : 0.0   MOS: 2.19
+  REF : ka ve ka ka kapsamında verileriniz güvenle saklanmaktadır
+  WHIS: ka ve ka ka kapsamında verileriniz güvenle saklanmaktadır
+  DIFF: ka ve ka ka kapsamında verileriniz güvenle saklanmaktadır
+  NEDEN:
+==============================================================================
+cikti_14.wav  [ozel_isim]  bayrak: -
+  KOD : TEMIZ
+  CER : 0.0   MOS: 2.63
+  REF : bugün türkiye iş bankası genel müdürlüğü ne giderken barbaros bulvarı nda kaza gördüm ve arkadaşım m
+  WHIS: bugün türkiye iş bankası genel müdürlüğüne giderken barbaros bulvarı nda kaza gördüm ve arkadaşım me
+  DIFF: bugün türkiye iş bankası genel müdürlüğü[- -]ne giderken barbaros bulvarı nda kaza gördüm ve arkadaşım mehmet ile karşılaştım
+  NEDEN:
+    - İki ASR de temiz, ayrışma yok. Okuma doğru.
+==============================================================================
+cikti_15.wav  [ozel_isim]  bayrak: -
+  KOD : NORM_KAZANC
+  CER : 0.0   MOS: 2.75
+  REF : sayın ayşe yılmaz kadıköy şubemizdeki işleminiz onaylanmıştır
+  WHIS: sayın ayşe yılmaz kadıköy şubemizdeki işleminiz onaylanmıştır
+  DIFF: sayın ayşe yılmaz kadıköy şubemizdeki işleminiz onaylanmıştır
+  NEDEN:
+    - Normalizasyon öncesi CER yüzde 1.8, sonrası yüzde 0.0. Katman 1.8 puan sahte hatayı temizledi.
+==============================================================================
+cikti_16.wav  [ing_karisik]  bayrak: -
+  KOD : NORM_KAZANC
+  CER : 0.0   MOS: 2.55
+  REF : bu kodların debug ını bitirdim sen de kodları tekrar check eder misin
+  WHIS: bu kodların debug ını bitirdim sen de kodları tekrar check eder misin
+  DIFF: bu kodların debug ını bitirdim sen de kodları tekrar check eder misin
+  NEDEN:
+    - Normalizasyon öncesi CER yüzde 3.3, sonrası yüzde 0.0. Katman 3.3 puan sahte hatayı temizledi.
+==============================================================================
+cikti_17.wav  [ing_karisik]  bayrak: -
+  KOD : TEMIZ
+  CER : 0.0   MOS: 2.58
+  REF : mobil bankacılık uygulamasına login olduktan sonra dashboard ekranından bakiyenizi görüntüleyebilirs
+  WHIS: mobil bankacılık uygulamasına login olduktan sonra dashboard ekranından bakiyenizi görüntüleyebilirs
+  DIFF: mobil bankacılık uygulamasına login olduktan sonra dashboard ekranından bakiyenizi görüntüleyebilirsiniz
+  NEDEN:
+    - İki ASR de temiz, ayrışma yok. Okuma doğru.
+==============================================================================
+cikti_18.wav  [cagri_merkezi]  bayrak: -
+  KOD : TEMIZ
+  CER : 0.0   MOS: 2.88
+  REF : merhaba size özel düşük faizli ihtiyaç kredisi kampanyası tanımlandı yararlanmak ister misiniz
+  WHIS: merhaba size özel düşük faizli ihtiyaç kredisi kampanyası tanımlandı yararlanmak ister misiniz
+  DIFF: merhaba size özel düşük faizli ihtiyaç kredisi kampanyası tanımlandı yararlanmak ister misiniz
+  NEDEN:
+    - İki ASR de temiz, ayrışma yok. Okuma doğru.
+==============================================================================
+cikti_19.wav  [cagri_merkezi]  bayrak: -
+  KOD : NORM_KAZANC
+  CER : 0.0   MOS: 2.64
+  REF : müşteri temsilcisine bağlanmak için sıfırı ana menüye dönmek için yıldız tuşuna basınız
+  WHIS: müşteri temsilcisine bağlanmak için sıfırı ana menüye dönmek için yıldız tuşuna basınız
+  DIFF: müşteri temsilcisine bağlanmak için sıfırı ana menüye dönmek için yıldız tuşuna basınız
+  NEDEN:
+    - Normalizasyon öncesi CER yüzde 1.3, sonrası yüzde 0.0. Katman 1.3 puan sahte hatayı temizledi.
+==============================================================================
+cikti_20.wav  [homograf]  bayrak: insan
+  KOD : INSAN + CER_ANLAMSIZ
+  CER : 2.2   MOS: 2.62
+  REF : şirketimiz bu çeyrek beklenenden yüksek kar açıkladı
+  WHIS: şiketimiz bu çeyrek beklenenden yüksek kar açıkladı
+  DIFF: şi[-r-]ketimiz bu çeyrek beklenenden yüksek kar açıkladı
+  NEDEN:
+    - Homograf cümlesi (kâr/kar, hâlâ/hala). Seste bilgi kaybı var, iki okunuşun fonemleri neredeyse aynı. Hiçbir ASR çözemez. CER'e bakılmaz, doğrudan insana gider.
+    - CER yüzde 2.2 ama bu 'doğru okundu' demek değil, 'ölçemedim' demek. Normalizasyon şapkayı siliyor (kâr → kar), Whisper zaten şapkasız yazıyor. İki okunuş da aynı metne düşüyor. Bu satırda CER hiçbir şey söylemiyor, sinyal boş.
+==============================================================================
+cikti_21.wav  [homograf]  bayrak: insan
+  KOD : INSAN + CER_ANLAMSIZ
+  CER : 0.0   MOS: 2.95
+  REF : hesabınız hala aktif değildir
+  WHIS: hesabınız hala aktif değildir
+  DIFF: hesabınız hala aktif değildir
+  NEDEN:
+    - Homograf cümlesi (kâr/kar, hâlâ/hala). Seste bilgi kaybı var, iki okunuşun fonemleri neredeyse aynı. Hiçbir ASR çözemez. CER'e bakılmaz, doğrudan insana gider.
+    - CER yüzde 0.0 ama bu 'doğru okundu' demek değil, 'ölçemedim' demek. Normalizasyon şapkayı siliyor (kâr → kar), Whisper zaten şapkasız yazıyor. İki okunuş da aynı metne düşüyor. Bu satırda CER hiçbir şey söylemiyor, sinyal boş.
+==============================================================================
+OZET (kod dagilimi):
+  TEMIZ          8
+  NORM_KAZANC    8
+  KRITIK         7
+  INSAN          6
+  W2V2_GURULTU   2
+  MASKELEME      2
+  CIFT_TETIK     2
+  CER_ANLAMSIZ   2

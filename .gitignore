@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+*.yedek
+paket/
+*.zip
+voxcpm-env/
+dinleme_seti/
+cevap_anahtari.json
+mos_isimsiz.json
+.DS_Store
+*.onnx
+*.onnx.json
+paket*/
+sesler_voxcpm*/
+capa_bozuk/
+test*.wav
+ref_ses.wav
