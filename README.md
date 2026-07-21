@@ -21,6 +21,7 @@ Detay: DEGISIKLIKLER.md
 
 ## Raporlar
 
+    rapor_ab.html              Piper vs VoxCPM (uretici karsilastirmasi)
     rapor_katman.html          Piper ham vs Piper + katman
     rapor_katman_voxcpm.html   VoxCPM ham vs VoxCPM + katman
 
