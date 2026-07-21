@@ -11,7 +11,9 @@ mos_isimsiz.json
 *.onnx
 *.onnx.json
 paket*/
-sesler_voxcpm*/
+sesler_voxcpm_22k/
+sesler_voxcpm_k2/
+sesler_voxcpm_norm/
 capa_bozuk/
 test*.wav
 ref_ses.wav
