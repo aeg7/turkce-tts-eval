@@ -53,13 +53,17 @@ _WHISPER = None
 def get_whisper(model_size="large-v3", device="auto", compute_type="auto"):
     """Modeli bir kez yükle (lazy). GPU yoksa device='cpu', compute_type='int8'."""
     global _WHISPER
-    if _WHISPER is None:
+    if not isinstance(_WHISPER, dict):
+        _WHISPER = {}
+    anahtar = (model_size, device, compute_type)
+    if anahtar not in _WHISPER:
         try:
             from faster_whisper import WhisperModel
         except ImportError:
             sys.exit("HATA: faster-whisper yok. Kur: pip install faster-whisper")
-        _WHISPER = WhisperModel(model_size, device=device, compute_type=compute_type)
-    return _WHISPER
+        print(f"[whisper] yukleniyor: {model_size}", file=sys.stderr)
+        _WHISPER[anahtar] = WhisperModel(model_size, device=device, compute_type=compute_type)
+    return _WHISPER[anahtar]
 
 
 def transcribe(wav_path, model_size="large-v3"):
