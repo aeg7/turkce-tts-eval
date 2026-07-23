@@ -1,0 +1,125 @@
+{
+  "aciklama": "capali UTMOSv2 olcumu, dinleme_seti_v2 dosyalari uzerinden",
+  "kayitlar": [
+    {
+      "uretici": "CAPA_bozuk",
+      "dosya": "taban_01.wav",
+      "mos": 2.706672191619873
+    },
+    {
+      "uretici": "CAPA_bozuk",
+      "dosya": "taban_02.wav",
+      "mos": 1.3474467992782593
+    },
+    {
+      "uretici": "CAPA_insan",
+      "dosya": "tavan_01.wav",
+      "mos": 3.4289650917053223
+    },
+    {
+      "uretici": "CAPA_insan",
+      "dosya": "tavan_02.wav",
+      "mos": 2.681709051132202
+    },
+    {
+      "uretici": "Piper",
+      "dosya": "cikti_00.wav",
+      "mos": 2.820331573486328
+    },
+    {
+      "uretici": "Piper",
+      "dosya": "cikti_01.wav",
+      "mos": 2.866126775741577
+    },
+    {
+      "uretici": "Piper",
+      "dosya": "cikti_02.wav",
+      "mos": 3.1934213638305664
+    },
+    {
+      "uretici": "Piper",
+      "dosya": "cikti_03.wav",
+      "mos": 2.730333089828491
+    },
+    {
+      "uretici": "Piper",
+      "dosya": "cikti_04.wav",
+      "mos": 2.7626376152038574
+    },
+    {
+      "uretici": "Piper",
+      "dosya": "cikti_08.wav",
+      "mos": 3.191314935684204
+    },
+    {
+      "uretici": "Piper",
+      "dosya": "cikti_09.wav",
+      "mos": 2.798017740249634
+    },
+    {
+      "uretici": "Piper",
+      "dosya": "cikti_11.wav",
+      "mos": 2.7163050174713135
+    },
+    {
+      "uretici": "Piper",
+      "dosya": "cikti_12.wav",
+      "mos": 3.0124175548553467
+    },
+    {
+      "uretici": "Piper",
+      "dosya": "cikti_17.wav",
+      "mos": 3.257948875427246
+    },
+    {
+      "uretici": "VoxCPM",
+      "dosya": "cikti_00.wav",
+      "mos": 2.1584553718566895
+    },
+    {
+      "uretici": "VoxCPM",
+      "dosya": "cikti_01.wav",
+      "mos": 2.703953981399536
+    },
+    {
+      "uretici": "VoxCPM",
+      "dosya": "cikti_02.wav",
+      "mos": 2.925886869430542
+    },
+    {
+      "uretici": "VoxCPM",
+      "dosya": "cikti_03.wav",
+      "mos": 2.7007126808166504
+    },
+    {
+      "uretici": "VoxCPM",
+      "dosya": "cikti_04.wav",
+      "mos": 3.1278316974639893
+    },
+    {
+      "uretici": "VoxCPM",
+      "dosya": "cikti_08.wav",
+      "mos": 2.7530360221862793
+    },
+    {
+      "uretici": "VoxCPM",
+      "dosya": "cikti_09.wav",
+      "mos": 2.55376935005188
+    },
+    {
+      "uretici": "VoxCPM",
+      "dosya": "cikti_11.wav",
+      "mos": 2.94438099861145
+    },
+    {
+      "uretici": "VoxCPM",
+      "dosya": "cikti_12.wav",
+      "mos": 2.9399256706237793
+    },
+    {
+      "uretici": "VoxCPM",
+      "dosya": "cikti_17.wav",
+      "mos": 2.6463565826416016
+    }
+  ]
+}

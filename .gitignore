@@ -18,3 +18,7 @@ capa_bozuk/
 test*.wav
 ref_ses.wav
 r.html
+capa_insan/
+dinleme_seti_v2/
+*.yedek_cache
+mos_capa.json
